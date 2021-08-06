@@ -25,7 +25,8 @@ As you can guess, it returns a `MoviesDao` - already configured and ready to use
 
 ```JAVA
 
-import data.movies.InMemoryMoviesDao;
+import InMemoryMoviesDao;
+import data.MoviesDao;
 import data.movies.MoviesDao;
 import data.movies.MySqlMoviesDao;
 
@@ -33,12 +34,15 @@ public class DaoFactory {
 
   private static MoviesDao moviesDao;
   private static Config config = new Config();
-  public enum ImplType {MYSQL, IN_MEMORY}; //Notice we have two values here
 
-  public static MoviesDao getMoviesDao(ImplType implementationType){
+  public enum ImplType {MYSQL, IN_MEMORY}
 
-    switch(implementationType){
-      case IN_MEMORY:{ //yet we have one switch case. We'll get to that!
+  ; //Notice we have two values here
+
+  public static MoviesDao getMoviesDao(ImplType implementationType) {
+
+    switch (implementationType) {
+      case IN_MEMORY: { //yet we have one switch case. We'll get to that!
         moviesDao = new InMemoryMoviesDao();
       }
     }
@@ -115,6 +119,7 @@ package data.movies;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import data.Movie;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -155,14 +160,14 @@ public class InMemoryMoviesDao implements MoviesDao {
 
   @Override
   public void update(Movie movie) throws SQLException {
-    if (moviesMap != null){
+    if (moviesMap != null) {
       moviesMap.replace(movie.getId(), movie);
     }
   }
 
   @Override
   public void destroy(int id) throws SQLException {
-    if (moviesMap != null){
+    if (moviesMap != null) {
       moviesMap.remove(id);
     }
   }

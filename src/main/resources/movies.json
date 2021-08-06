@@ -1,0 +1,43 @@
+
+[
+{
+"title": "Fight Club",
+"poster": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+"year": "1999",
+"genre": " Drama",
+"director": " David Fincher",
+"quote": "Sticking a feather up your butt doesn't make you a chicken",
+"actors": " Edward Norton, Brad Pitt, Meat Loaf, Helena Bonham person",
+"id": 2
+},
+{
+"title": "Usual Suspects",
+"poster": "https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+"year": "1995",
+"genre": " Crime, Mystery, Thriller",
+"director": " Somebody else",
+"quote": "I Believe In God, And The Only Thing That Scares Me Is Keyser Soze.",
+"actors": "Kevin Spacey, Benicio Del Toro",
+"id": 4
+},
+{
+"title": "Se7en",
+"poster": "https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+"year": "1995",
+"genre": "Crime, Thriller",
+"director": "David Fincher",
+"quote": "He's a nut-bag! Just because the guy's got a library card doesn't make him Yoda!",
+"actors": "Brad Pitt, Morgan Freeman",
+"id": 5
+},
+{
+"title": "The Godfather",
+"poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg",
+"year": "1972",
+"genre": "Drama",
+"director": "Francis Ford Copolla",
+"quote": "A friend should always underestimate your virtues and an enemy overestimate your faults!",
+"actors": "Al Pacino, Marlo Brando, James Caan",
+"id": 1
+}
+]

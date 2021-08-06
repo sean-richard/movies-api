@@ -60,9 +60,9 @@ This  `MySqlMoviesDao` class will contain the actual code needed to query/comman
 ```JAVA
 
 import com.mysql.cj.jdbc.Driver;
+import data.MoviesDao;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class MySqlMoviesDao implements MoviesDao {
