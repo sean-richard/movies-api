@@ -1,37 +1,27 @@
 package data;
 
 public class Movie {
-    private int id;
     private String title;
-    private String year;
-    private String director;
-    private String actors;
-    private String imdbID;
     private String poster;
+    private int year;
     private String genre;
-    private String plot;
+    private String director;
+    private String quote;
+    private String actors;
+    private int id;
 
-    public Movie(){
+    public Movie() {
 
     }
 
-    public Movie(int id, String title, String year, String director, String actors, String imdbID, String poster, String genre, String plot) {
-        this.id = id;
+    public Movie(String title, String poster, int year, String genre, String director, String quote, String actors, int id) {
         this.title = title;
-        this.year = year;
-        this.director = director;
-        this.actors = actors;
-        this.imdbID = imdbID;
         this.poster = poster;
+        this.year = year;
         this.genre = genre;
-        this.plot = plot;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
+        this.director = director;
+        this.quote = quote;
+        this.actors = actors;
         this.id = id;
     }
 
@@ -43,44 +33,20 @@ public class Movie {
         this.title = title;
     }
 
-    public String getYear() {
-        return year;
-    }
-
-    public void setYear(String year) {
-        this.year = year;
-    }
-
-    public String getDirector() {
-        return director;
-    }
-
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public String getActors() {
-        return actors;
-    }
-
-    public void setActors(String actors) {
-        this.actors = actors;
-    }
-
-    public String getImdbID() {
-        return imdbID;
-    }
-
-    public void setImdbID(String imdbID) {
-        this.imdbID = imdbID;
-    }
-
     public String getPoster() {
         return poster;
     }
 
     public void setPoster(String poster) {
         this.poster = poster;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public String getGenre() {
@@ -91,11 +57,36 @@ public class Movie {
         this.genre = genre;
     }
 
-    public String getPlot() {
-        return plot;
+    public String getDirector() {
+        return director;
     }
 
-    public void setPlot(String plot) {
-        this.plot = plot;
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    public String getQuote() {
+        return quote;
+    }
+
+    public void setQuote(String quote) {
+        this.quote = quote;
+    }
+
+    public String getActors() {
+        return actors;
+    }
+
+    public void setActors(String actors) {
+        this.actors = actors;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
+
