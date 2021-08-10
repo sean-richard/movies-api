@@ -37,17 +37,16 @@ public class MoviesServlet extends HttpServlet {
 
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("application/json");
-        PrintWriter out = null;
+        PrintWriter out = response.getWriter();
+
         try {
-            out = response.getWriter();
             //get the stream of characters from the request (eventually becomes our movie)
 //            BufferedReader reader = request.getReader();
 
             // turn that stream into an array of Movies
             Movie[] movies = new Gson().fromJson(request.getReader(), Movie[].class);
-            response.setContentType("application/json");
             DaoFactory.getMoviesDao(DaoFactory.ImplType.MYSQL).insertAll(movies);
 
         } catch (SQLException | IOException e) {

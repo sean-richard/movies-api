@@ -5,8 +5,7 @@ import data.MoviesDao;
 import data.MySqlMoviesDao;
 
 import java.io.ObjectInputFilter;
-//import data.movies.MoviesDao;
-//import data.movies.MySqlMoviesDao;
+
 
 
 public class DaoFactory {

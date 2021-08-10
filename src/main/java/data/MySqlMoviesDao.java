@@ -104,7 +104,7 @@ public class MySqlMoviesDao implements MoviesDao {
 
         // Build sql template
         StringBuilder sql = new StringBuilder("INSERT INTO movies (" +
-                "id, title, year, director, actors, poster, genre, plot) " +
+                "title, poster, year, genre, director, quote, actors, id) " +
                 "VALUES ");
 
 
